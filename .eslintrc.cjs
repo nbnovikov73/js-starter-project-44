@@ -3,7 +3,7 @@ module.exports = {
         'browser': true,
         'es2021': true
     },
-    'extends': 'eslint:recommended',
+    'extends': "airbnb",
     'overrides': [
     ],
     'parserOptions': {
@@ -11,6 +11,12 @@ module.exports = {
         'sourceType': 'module'
     },
     'rules': {
+        "no-console": "off",
+        'import/extensions': [
+            'error',
+            'ignorePackages',
+            'always'
+        ],
         'indent': [
             'error',
             4
